@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+}
+
+model User {
+  id                String   @id @default(uuid())
+  name              String
+  phone          String   @unique
+  password             String
+  neibor            String
+  municipaly         String
+  group             Int
+  frequency        String
+  deliveryMethod     String
+  deliveryAddress   String?
+  payment         String
+  paymentModel   String
+  cautions        Json?
+  newsletter        Boolean  @default(false)
+
+  createdAt         DateTime @default(now())
+}
