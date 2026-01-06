@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 
 import { AuthRepositoryImpl } from "../../../../application/repositoryImpl/AuthRepositoryImpl";
-import { LoginUseCase } from "../../../../application/usecases/LoginUseCase";
+import { LoginUseCase } from "../../../../application/usecases/Auth/LoginUseCase";
 import { AuthDtoImpl } from "../../../../shared/utils/AuthDTOImpl";
 import { AuthRepositoryDataSource } from "../../../database/prisma/auth.repository";
 import { passwordComparator } from "../../../../shared/utils/hashPassword";

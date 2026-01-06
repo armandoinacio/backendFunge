@@ -1,4 +1,4 @@
-import { AuthDTO } from "../../application/dtos/AuthDTO";
+import { AuthDTO } from "../../domain/dtos/AuthDTO";
 
 export const AuthDtoImpl=(body:any):AuthDTO=>{
     return {phone:body.phone,

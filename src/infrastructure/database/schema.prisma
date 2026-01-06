@@ -25,3 +25,11 @@ model User {
 
   createdAt         DateTime @default(now())
 }
+
+model Plan {
+  id String @id @default(uuid())
+  plan String
+  price String
+  description String
+}
+

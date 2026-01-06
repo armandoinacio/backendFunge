@@ -1,6 +1,6 @@
 import { prisma } from "./client";
 import { IUserRepository } from "../../../domain/repositories/IUserRepository";
-import { CreateUserDTO } from "../../../application/dtos/CreateUserDTO";
+import { CreateUserDTO } from "../../../domain/dtos/CreateUserDTO";
 
 export class UserRepositoryDataSource implements IUserRepository {
 

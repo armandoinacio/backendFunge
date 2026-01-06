@@ -1,4 +1,4 @@
-import { AuthDTO } from "../../../application/dtos/AuthDTO";
+import { AuthDTO } from "../../../domain/dtos/AuthDTO";
 import { AuthRepository } from "../../../domain/repositories/AutRepository";
 import { prisma } from "./client";
 import jwt from "jsonwebtoken"

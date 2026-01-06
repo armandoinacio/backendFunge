@@ -1,5 +1,5 @@
-import { AuthDTO } from "../../application/dtos/AuthDTO";
-import { CreateUserDTO } from "../../application/dtos/CreateUserDTO";
+import { AuthDTO } from "../dtos/AuthDTO";
+import { CreateUserDTO } from "../dtos/CreateUserDTO";
 import { Auth } from "../entities/Auth";
 import { User } from "../entities/User";
 

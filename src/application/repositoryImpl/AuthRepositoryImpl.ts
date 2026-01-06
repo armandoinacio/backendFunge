@@ -1,7 +1,7 @@
 import { Auth } from "../../domain/entities/Auth";
 import { AuthRepository } from "../../domain/repositories/AutRepository";
 import { AuthRepositoryDataSource } from "../../infrastructure/database/prisma/auth.repository";
-import { CreateUserDTO } from "../dtos/CreateUserDTO";
+import { CreateUserDTO } from "../../domain/dtos/CreateUserDTO";
 
 export class AuthRepositoryImpl implements AuthRepository{
     constructor(public authRepositoryDataSource:AuthRepositoryDataSource){}

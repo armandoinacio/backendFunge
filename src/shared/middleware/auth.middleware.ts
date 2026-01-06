@@ -1,6 +1,6 @@
 import { Request, NextFunction,Response, json } from "express";
 import jwt from 'jsonwebtoken'
-import { TokenPayload } from "../interface/TokenPayload";
+import { TokenPayload } from "../../interface/TokenPayload"; 
 const JWT_SECRET_KEY=process.env.JWT_SECRET_KEY || "k@erew"
 
 export function authMiddleware(req:Request,res:Response,next:NextFunction){

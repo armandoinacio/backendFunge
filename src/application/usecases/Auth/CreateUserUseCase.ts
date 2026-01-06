@@ -1,7 +1,7 @@
-import { IUserRepository } from "../../domain/repositories/IUserRepository";
-import { CreateUserDTO } from "../dtos/CreateUserDTO";
+import { IUserRepository } from "../../../domain/repositories/IUserRepository";
+import { CreateUserDTO } from "../../../domain/dtos/CreateUserDTO";
 import bcrypt from "bcrypt";
-import { UserRepositoryIml } from "../repositoryImpl/UserRepsitoryImpl";
+import { UserRepositoryIml } from "../../repositoryImpl/UserRepsitoryImpl";
 
 export class CreateUserUseCase {
   constructor(private userRepository: UserRepositoryIml) {}

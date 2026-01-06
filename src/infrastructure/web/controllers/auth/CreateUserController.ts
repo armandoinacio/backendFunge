@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import {  UserRepositoryDataSource } from "../../../database/prisma/user.repository";
-import { CreateUserUseCase } from "../../../../application/usecases/CreateUserUseCase";
+import { CreateUserUseCase } from "../../../../application/usecases/Auth/CreateUserUseCase";
 import { UserRepositoryIml } from "../../../../application/repositoryImpl/UserRepsitoryImpl";
-import { CreateUserDTO } from "../../../../application/dtos/CreateUserDTO";
+import { CreateUserDTO } from "../../../../domain/dtos/CreateUserDTO";
 import { DTOUser } from "../../../../shared/utils/DTOUser";
 
 export class CreateUserController {

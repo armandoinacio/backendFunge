@@ -1,6 +1,6 @@
-import { Auth } from "../../domain/entities/Auth";
-import { AuthDTO } from "../dtos/AuthDTO";
-import { AuthRepositoryImpl } from "../repositoryImpl/AuthRepositoryImpl";
+import { Auth } from "../../../domain/entities/Auth";
+import { AuthDTO } from "../../../domain/dtos/AuthDTO";
+import { AuthRepositoryImpl } from "../../repositoryImpl/AuthRepositoryImpl";
 
 export class LoginUseCase{
     constructor(public authRepositoryImpl:AuthRepositoryImpl){}

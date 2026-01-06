@@ -1,4 +1,4 @@
-import { CreateUserDTO } from "../../application/dtos/CreateUserDTO";
+import { CreateUserDTO } from "../dtos/CreateUserDTO";
 
 export interface IUserRepository {
   create(data: CreateUserDTO): Promise<void>

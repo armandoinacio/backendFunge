@@ -1,6 +1,6 @@
 import { IUserRepository } from "../../domain/repositories/IUserRepository";
 import { UserRepositoryDataSource } from "../../infrastructure/database/prisma/user.repository";
-import { CreateUserDTO } from "../dtos/CreateUserDTO";
+import { CreateUserDTO } from "../../domain/dtos/CreateUserDTO";
 
 export class UserRepositoryIml implements IUserRepository {
     constructor(private userRepo:UserRepositoryDataSource){}
