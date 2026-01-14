@@ -14,6 +14,6 @@ export const DTOUser = (body: any): any => {
         paymentModel: body.paymentModel,
         cautions: body.cautions,
         newsletter: body.newsletter
-    }
+        }
 
 }

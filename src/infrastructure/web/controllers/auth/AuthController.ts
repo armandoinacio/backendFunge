@@ -11,9 +11,8 @@ export class AuthController{
  async login(req: Request, res: Response){
   const loginUseCase=new LoginUseCase(new AuthRepositoryImpl(new AuthRepositoryDataSource()))
   try {
-    console.log("before")
+   
     const authDTO=AuthDtoImpl(req.body);
-    console.log("authDTO",authDTO)
     const user= await loginUseCase.execute(authDTO);
     if(!user){
       return res.status(401).json({message:"Usuário não existe"})

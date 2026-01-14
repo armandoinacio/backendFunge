@@ -8,7 +8,7 @@ import { DTOUser } from "../../../../shared/utils/DTOUser";
 export class CreateUserController {
   async handle(req: Request, res: Response) {
     const useCase = new CreateUserUseCase( new UserRepositoryIml(new UserRepositoryDataSource()));
-    const userDto: CreateUserDTO=DTOUser(req.body);
+    const userDto=DTOUser(req.body);
     await useCase.execute(userDto);
     return res.status(201).json({ message: "Conta criada com sucesso" });
   }

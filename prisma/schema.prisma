@@ -24,10 +24,22 @@ model User {
   newsletter        Boolean  @default(false)
 
   createdAt         DateTime @default(now())
+   subscritions Subscritions[]
 }
 model Plan {
   id String @id @default(uuid())
   plan String
   price String
   description String
+  subscritions Subscritions[]
+   createdAt         DateTime @default(now())
+}
+
+model Subscritions{
+  id String @id @default(uuid())
+  planId String
+  userId String
+  user User    @relation(fields: [userId], references: [id])
+  plan Plan @relation(fields: [planId],references: [id])
+  createdAt         DateTime @default(now())
 }
